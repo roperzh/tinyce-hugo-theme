@@ -1,3 +1,16 @@
 // -------------------------------------------
 //   Layouts
 // -------------------------------------------
+
+/* Wrapper for the content */
+#content-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+/* Header with navigation */
+#main-header {
+  height: $header-height;
+  background: white;
+}
