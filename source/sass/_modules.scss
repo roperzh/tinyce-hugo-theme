@@ -88,4 +88,9 @@
   border-radius: 50%;
   width: 80px;
   height: auto;
+
+  &:hover {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
 }
