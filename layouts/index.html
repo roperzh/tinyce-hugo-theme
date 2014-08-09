@@ -1,11 +1,10 @@
 {{ template "theme/partials/head.html" . }}
-<body>
+<body id="list">
   {{ template "theme/partials/header.html" . }}
   <div id="content-container">
     <div class="posts">
-
       <!-- Iterate over the pages -->
-      {{ range .Data.Pages }}
+      {{ range first 10 .Data.Pages }}
         <div class="post-preview">
           <span class="post-symbol {{ .Params.color }}">
             <i class="symbol fa fa-{{ .Params.icon }}"></i>
@@ -18,6 +17,7 @@
 
             <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
 
+            <p>{{ .Description }}</p>
           </div>
         </div>
       {{ end }}
