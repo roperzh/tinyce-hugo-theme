@@ -1,12 +1,22 @@
+{{$currentPath := .UrlPath.Url }}
+
 <header id="main-header">
   <a href="/">
-    <img src="/images/profile.jpg" class="profile-image">
+    <img src="/images/profile.jpg" class="animated profile-image" alt="Go home">
   </a>
 
   <nav class="horizontal-nav">
     <ul class="horizontal-nav-list">
-      <li class="active"><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class='{{ if eq $currentPath "/" }} active {{ end }}'>
+        <a href="/">All</a>
+      </li>
+
+      {{ range $key, $element := .Site.Sections }}
+        <li class='{{ if eq $currentPath (print "/" $key) }} active {{ end }}'>
+          <a href="/{{$key}}">{{ $key }}</a>
+        </li>
+      {{ end }}
+
     </ul>
   </nav>
 </header>
