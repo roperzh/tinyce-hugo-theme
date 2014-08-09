@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Rubies on Tinyce Blog </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://roperzh.github.io/ruby/index.xml</link>
+    <language>en-us</language>
+    
+    
+    <updated>Sat, 09 Aug 2014 05:04:36 UTC</updated>
+    
+    <item>
+      <title>ruby love</title>
+      <link>http://roperzh.github.io/ruby/ruby-love</link>
+      <pubDate>Sat, 09 Aug 2014 05:04:36 UTC</pubDate>
+      
+      <guid>http://roperzh.github.io/ruby/ruby-love</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby is cool</title>
+      <link>http://roperzh.github.io/ruby/ruby-is-cool</link>
+      <pubDate>Sat, 09 Aug 2014 05:03:35 UTC</pubDate>
+      
+      <guid>http://roperzh.github.io/ruby/ruby-is-cool</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>intro</title>
+      <link>http://roperzh.github.io/ruby/intro</link>
+      <pubDate>Sat, 09 Aug 2014 05:03:29 UTC</pubDate>
+      
+      <guid>http://roperzh.github.io/ruby/intro</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
