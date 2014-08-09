@@ -6,12 +6,19 @@
 
       <!-- Iterate over the pages -->
       {{ range .Data.Pages }}
-        <div class="post">
-          <h1 class="post-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h1>
+        <div class="post-preview">
+          <span class="post-symbol {{ .Params.color }}">
+            <i class="symbol fa fa-{{ .Params.icon }}"></i>
+          </span>
 
-          <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+          <div class="post-content">
+            <h1 class="post-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h1>
+
+            <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+
+          </div>
         </div>
       {{ end }}
 
