@@ -1,12 +1,30 @@
 {{ template "theme/partials/head.html" . }}
-<body>
-    <div class="content container">
-  <ul class="posts">
-      {{ range .Data.Pages }}
-      <li><span><a href="{{ .Permalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
-      {{ end }}
-  </ul>
-    </div>
+<body id="list">
+  {{ template "theme/partials/header.html" . }}
+  <div id="content-container">
+    <div class="posts">
+      <!-- Iterate over the pages -->
+      {{ range first 10 .Data.Pages }}
+        <div class="post-preview">
+          <span class="post-symbol {{ .Params.color }}">
+            <i class="symbol fa fa-{{ .Params.icon }}"></i>
+          </span>
 
-  </body>
+          <div class="post-content">
+            <h1 class="post-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h1>
+
+            <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+
+            <p>{{ .Description }}</p>
+          </div>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+  {{ template "theme/partials/footer.html" . }}
+</body>
 </html>
