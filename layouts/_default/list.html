@@ -12,7 +12,7 @@
 
           <div class="post-content">
             <h1 class="post-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
+              <a href="{{ .Site.BaseUrl }}{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
 
             <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>

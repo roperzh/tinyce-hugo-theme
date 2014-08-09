@@ -1,19 +1,20 @@
-{{$currentPath := .UrlPath.Url }}
+{{ $currentPath := .UrlPath.Url }}
+{{ $baseUrl := .Site.BaseUrl }}
 
 <header id="main-header">
-  <a href="/">
-    <img src="/images/profile.jpg" class="animated profile-image" alt="Go home">
+  <a href="{{ $baseUrl }}">
+    <img src="{{ $baseUrl }}/images/profile.jpg" class="animated profile-image" alt="Go home">
   </a>
 
   <nav class="horizontal-nav">
     <ul class="horizontal-nav-list">
       <li class='{{ if eq $currentPath "/" }} active {{ end }}'>
-        <a href="/">All</a>
+        <a href="{{ $baseUrl }}">all</a>
       </li>
 
       {{ range $key, $element := .Site.Sections }}
         <li class='{{ if eq $currentPath (print "/" $key) }} active {{ end }}'>
-          <a href="/{{$key}}">{{ $key }}</a>
+          <a href="{{ $baseUrl }}/{{$key}}">{{ $key }}</a>
         </li>
       {{ end }}
 
