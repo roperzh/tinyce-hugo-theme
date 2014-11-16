@@ -1,6 +1,6 @@
-{{ template "theme/partials/head.html" . }}
+{{ partial "head.html" . }}
 <body id="single">
-  {{ template "theme/partials/header.html" . }}
+  {{ partial "header.html" . }}
 
   <section class="post-symbol {{ .Params.color }}">
     <i class="symbol fa fa-{{ .Params.icon }}"></i>
@@ -11,10 +11,10 @@
     <div class="post">
       <h1>{{ .Title }}</h1>
       <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-      <p class="post-content">{{ .Description }}</p>
+      <p class="post-content">{{ .Content }}</p>
     </div>
 
-    {{ template "theme/partials/disqus.html" . }}
+    {{ partial "disqus.html" . }}
   </div>
 </body>
 </html>
