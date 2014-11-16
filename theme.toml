@@ -1,6 +1,11 @@
-author = ""
-description = ""
-license = "MIT"
 name = "tinyce"
-source_repo = ""
-tags = ["", ""]
+license = "MIT"
+licenselink = "https://github.com/roperzh/tinyce-hugo-theme/blob/master/LICENSE.md"
+description = "Tinyce is a general purpose hugo theme."
+homepage = "http://roperzh.github.io/tinyce-hugo-theme/"
+tags = ["roperzh", ]
+features = ["blog", ]
+
+[author]
+    name = "roperzh"
+    homepage = "http://roperzh.github.io/tinyce-hugo-theme/"
