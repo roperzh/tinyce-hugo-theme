@@ -3,9 +3,10 @@ license = "MIT"
 licenselink = "https://github.com/roperzh/tinyce-hugo-theme/blob/master/LICENSE.md"
 description = "Tinyce is a general purpose hugo theme."
 homepage = "http://roperzh.github.io/tinyce-hugo-theme/"
-tags = ["roperzh", ]
-features = ["blog", ]
+tags = ["discuss", "mobile", "responsive", "flat", "blog"]
+features = ["discuss", "mobile", "responsive", "flat", "blog"]
 
 [author]
     name = "roperzh"
-    homepage = "http://roperzh.github.io/tinyce-hugo-theme/"
+    homepage = "http://roperzh.com/"
+    repo = "https://github.com/roperzh/tinyce-hugo-theme"
