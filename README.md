@@ -29,13 +29,13 @@ Now you can set tinyce as the default theme for your site by adding this line
 in the `config` file:
 
 ```toml
-theme = "tinyce"
+theme = "tinyce-hugo-theme"
 ```
 
 Or you can start the server with:
 
 ```bash
-hugo server --theme=tinyce --buildDrafts --watch
+hugo server --theme=tinyce-hugo-theme --buildDrafts --watch
 ```
 
 Setting Variables
