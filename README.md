@@ -25,6 +25,8 @@ $ cd themes
 $ git clone https://github.com/roperzh/tinyce-hugo-theme
 ```
 
+**If you are using Hugo v0.11 or below, please read [this](https://github.com/roperzh/tinyce-hugo-theme#tbd)**
+
 Now you can set tinyce as the default theme for your site by adding this line
 in the `config` file:
 
@@ -66,6 +68,21 @@ date = 2014-08-09T05:04:40Z
 +++
 
 ```
+
+Usage with Hugo v0.11 and below
+===
+
+The latest version of the theme includes some features bundled with Hugo v0.12,
+if you are using an old version, please install tinyce like this:
+
+```bash
+$ cd themes
+$ git clone https://github.com/roperzh/tinyce-hugo-theme
+$ cd tinyce-hugo-theme
+$ git checkout 08a497
+```
+
+That's it!
 
 Contributing
 ===
