@@ -25,7 +25,7 @@ $ cd themes
 $ git clone https://github.com/roperzh/tinyce-hugo-theme
 ```
 
-**If you are using Hugo v0.11 or below, please read [this](https://github.com/roperzh/tinyce-hugo-theme#tbd)**
+*If you are using Hugo v0.11 or below, please read [this](https://github.com/roperzh/tinyce-hugo-theme/#usage-with-hugo-v011-and-below)*
 
 Now you can set tinyce as the default theme for your site by adding this line
 in the `config` file:
