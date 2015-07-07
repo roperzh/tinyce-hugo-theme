@@ -5,6 +5,7 @@ description = "Tinyce is a general purpose hugo theme."
 homepage = "http://roperzh.github.io/tinyce-hugo-theme/"
 tags = ["discuss", "mobile", "responsive", "flat", "blog"]
 features = ["discuss", "mobile", "responsive", "flat", "blog"]
+min_version = 0.14
 
 [author]
     name = "roperzh"
