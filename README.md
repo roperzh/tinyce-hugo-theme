@@ -48,7 +48,7 @@ you will only need to define two new variables in the front matter section of
 your contents.
 
 - **color** : the color associated with the post, valid colors are: `red`,
-`green`, `blue`, `yellow`, `orange` and `grey`.
+`green`, `blue`, `yellow`, `orange` and `gray`.
 
 - **icon** : a valid font-awesome icon name, without the `fa-` prefix. For example,
 instead of `fa-heart`, you only need to put `heart`. [here](http://fortawesome.github.io/Font-Awesome/cheatsheet/)
