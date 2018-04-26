@@ -147,6 +147,7 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
+  max-width: 100%; 
   border: 0; }
 
 /**
